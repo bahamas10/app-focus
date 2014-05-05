@@ -33,6 +33,7 @@
 {
     NSRunningApplication *app = d.userInfo[NSWorkspaceApplicationKey];
     printf("%s\n", app.localizedName.UTF8String);
+    fflush(stdout);
 }
 @end
 
@@ -62,4 +63,3 @@ int main(int argc, char **argv) {
     };
     return 0;
 }
-
